@@ -1,0 +1,31 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: $width-container+100px;
+  padding: 0 50px;
+
+  @media (max-width: $md) {
+    padding: 0 20px;
+  }
+
+  @media (max-width: $xxsm) {
+    padding: 0 10px;
+  }
+  &_sm-indent {
+    max-width: 1400px;
+    padding: 0 20px;
+
+    @media (max-width: $lg) {
+      padding: 0 25px;
+    }
+    @media (max-width: $md) {
+      padding: 0 20px;
+    }
+    @media (max-width: $xxsm) {
+      padding: 0 10px;
+    }
+  }
+  &_max {
+    max-width: none;
+  }
+}

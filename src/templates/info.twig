@@ -1,0 +1,114 @@
+---
+title: Pages - Space House
+description: Space House description
+pageName: infoPage
+<!-- className: header-light -->
+---
+
+{% extends 'layouts/_page-default.twig' %}
+{% block content %}
+
+<div class="modal modal_st micromodal-slide" id="modal-1" aria-hidden="true">
+	<div class="modal__overlay" tabindex="-1" data-modal-close>
+		<div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+			<div class="container" data-modal-close>
+
+        <div class="modal-content__inner-scroll txt-center">
+          <div class="modal-st__link-close" data-modal-close>
+            <img src="img/close.png" alt="icon" data-modal-close>
+          </div>
+          <h4>Thank you, we will be in touch</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, velit! Ad voluptas voluptatum placeat omnis possimus modi explicabo amet dolorem.</p>
+        </div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="fullpage" class="info-bg">
+  <div class="section section-information fp-auto-height scroll-auto" data-anchor="header">
+
+    {% include "blocks/_header.twig" %}
+    {% include "blocks/_header-menu.twig" %}
+
+    <div class="section-information__inner">
+      <div class="container container_max container_sm-indent">
+        <div class="info-bl-grid">
+          <div class="info-bl__left" data-anim-fadel>
+            <div class="info-bl-crcl">
+              <div class="info-bl-crcl__grid mb--7 mb--1-mb">
+                <div class="info-bl-crcl__left" data-anim-fadey>
+                  <img src="img/logo-sm.png" alt="logotype">
+                </div>
+                <div class="info-bl-crcl__right info-bl-crcl__right_bottom">
+                  <div class="ftr-info__txt" data-anim-fadey="0.1">1 kemble street</div>
+                  <div class="ftr-info__txt" data-anim-fadey="0.2">LONDON wc2</div>
+                </div>
+              </div>
+              <div class="info-bl-crcl__txt mb--03">
+                <div class="ftr-info__txt" data-anim-fadey="0.3">LEASING AGENTS</div>
+              </div>
+              <div class="info-bl-crcl__grid">
+                <div class="info-bl-crcl__left mb--2-mb">
+                  <div class="ftr-info__img-sm" data-anim-fadey="0.4">
+                    <img src="img/savills.svg" alt="image icon">
+                  </div>
+                  <div class="ftr-info__txt" data-anim-fadey="0.5">Andrew Barnes</div>
+                  <div class="ftr-info__txt" data-anim-fadey="0.6">07980 915420</div>
+                  <a href="mailto:andrew.barnes@savills.com" class="ftr-info__txt" data-anim-fadey="0.7">andrew.barnes@savills.com</a>
+                </div>
+                <div class="info-bl-crcl__right">
+                  <div class="ftr-info__img-md" data-anim-fadey="0.8">
+                    <img src="img/cbre.svg" alt="image icon">
+                  </div>
+                  <div class="ftr-info__txt" data-anim-fadey="0.9">Matt Chicken</div>
+                  <div class="ftr-info__txt" data-anim-fadey="1">07852 205099 </div>
+                  <a href="mailto:matt.chicken@cbre.com" class="ftr-info__txt" data-anim-fadey="1.1">matt.chicken@cbre.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="info-bl__right" data-anim-fader>
+            <div class="form-info" data-form-send>
+              <form action="#">
+                <div class="tt-site tt-site_h4 mb--4 mb--2-mb" data-anim-fadey>ENQUIRIES</div>
+                <div class="form-group-grid">
+                  <div class="form-group form-group-grid__half-col" data-anim-fadey="0.2">
+                    <input class="form-group__field" type="text" placeholder="FIRST NAME" required>
+                  </div>
+                  <div class="form-group form-group-grid__half-col" data-anim-fadey="0.4">
+                    <input class="form-group__field" type="text" placeholder="LAST NAME">
+                  </div>
+                </div>
+                <div class="form-group" data-anim-fadey="0.6">
+                  <input class="form-group__field" type="email" placeholder="EMAIL ADDRESS" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
+                </div>
+                <div class="form-group mb--6 mb--4-mb" data-anim-fadey="0.8">
+                  <input class="form-group__field" type="tel" placeholder="CONTACT NUMBER">
+                </div>
+                <div class="form-group" data-anim-fadey="1">
+                  <textarea class="form-group__field" placeholder="MESSAGE"></textarea>
+                </div>
+                <div class="form-group txt-center" data-anim-fadey="1.2">
+                  <button class="btn-form btn btn_icon">
+                    <div class="btn__icon-text">SUBMIT</div>
+                    <div class="btn__icon btn__icon_arrow btn__icon_right"></div>
+                  </button>
+                </div>
+                <!-- <div class="form-group form-group_txt txt-center" data-anim-fadey="1.4">
+                  THANK  YOU, WE WILL BE IN TOUCH.
+                </div> -->
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="info-bl-desc">&copy; Seaforth Land </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+{% endblock %}

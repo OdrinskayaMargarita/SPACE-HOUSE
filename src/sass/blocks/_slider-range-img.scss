@@ -1,0 +1,106 @@
+
+@mixin center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-range-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background-size: auto 100%;
+    background-position: left center;
+    background-repeat: no-repeat;
+    img {
+      width: 100vw;
+      max-width: none;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__foreground-img {
+    width: 50%;
+    overflow: hidden;
+  }
+
+  &__slider {
+    position: absolute;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(#f2f2f2, 0.3);
+    outline: none;
+    margin: 0;
+    transition: all 0.2s;
+    @include center;
+    &:hover {
+      background: rgba(#f2f2f2, 0.1);
+    }
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 50px;
+      height: 100vh;
+      background: none;
+      cursor: pointer;
+      opacity: 0;
+    }
+    &::-moz-range-thumb {
+      width: 50px;
+      height: 100vh;
+      background: none;
+      cursor: pointer;
+      opacity: 0;
+    }
+  }
+
+  &__slider-button {
+    // $size: 30px;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    border-radius: 50%;
+    background-color: white;
+    left: calc(50% - 1px);
+    @include center;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 38px;
+      height: 38px;
+      background-color: #fff;
+      border-radius: 50%;
+
+    }
+
+    // @mixin arrow-helper() {
+    //   content: "";
+    //   padding: 3px;
+    //   display: inline-block;
+    //   border: solid #5d5d5d;
+    //   border-width: 0 2px 2px 0;
+    // }
+    // &:after {
+    //   @include arrow-helper();
+    //   transform: rotate(-45deg);
+    // }
+    // &:before {
+    //   @include arrow-helper();
+    //   transform: rotate(135deg);
+    // }
+  }
+}

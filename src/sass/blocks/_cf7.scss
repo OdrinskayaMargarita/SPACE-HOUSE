@@ -1,0 +1,63 @@
+/*WPCF7 styles*/
+
+.wpcf7-form{
+  position: relative;
+  padding-bottom: 20px;
+  @media (max-width: $md) {
+    padding-bottom: 30px;
+  }
+  .form-group{
+    position: relative;
+  }
+  .wpcf7-form-control-wrap{
+    position: unset;
+  }
+  .wpcf7-not-valid{
+    border-color: #cf2a2a!important;
+  }
+  .wpcf7-not-valid-tip{
+    position: absolute;
+    font-size: 10px;
+    right: 0;
+    top: calc(100% + 2px);
+    color: #cf2a2a!important;
+    width: 100%;
+    line-height: 1;
+  }
+  .ajax-loader{
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 0;
+    margin: 0;
+  }
+  .wpcf7-response-output{
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    border: 0!important;
+    padding: 0!important;
+    margin: 0!important;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+    @media (max-width: $md) {
+      font-size: 10px;
+      line-height: 14px;
+    }
+  }
+  &.invalid{
+    .wpcf7-response-output{
+      color: #cf2a2a;
+    }
+  }
+  &.sent{
+    .wpcf7-response-output{
+      color: #000;
+    }
+  }
+  .hidden-submit{
+    display: none;
+  }
+}

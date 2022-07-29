@@ -1,0 +1,317 @@
+/* ----- Covent all style ------------------- */
+.covent-banner-wrapp {
+  position: relative;
+  z-index: 1;
+  padding: 100px 20px 25px;
+  height: 100%;
+  text-align: left;
+  @media (max-width: $lg) {
+    padding: 140px 25px 65px;
+  }
+  @media (max-width: $md) {
+    padding: 125px 20px 20px;
+  }
+  .container {
+    height: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.covent-banner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 40px;
+  height: 100%;
+  align-items: center;
+  padding-bottom: 100px;
+  @media (max-width: $lg) {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 0;
+  }
+  &__left {
+    padding-bottom: 110px;
+    .tt-site_h1, .tt-site_h2, h1, h2 {
+      letter-spacing: 5px;
+      @media (max-width: $lg) {
+        letter-spacing: 4px;
+      }
+    }
+    .tt-site_h1, h1{
+      @media (max-width: $md) {
+        font-size: 80px;
+      }
+      @media (max-width: $sm) {
+        font-size: 46px;
+        line-height: 48px;
+      }
+    }
+    @media (max-width: $lg) {
+      padding-bottom: 0;
+      margin-bottom: 40px;
+    }
+    @media (max-width: $md) {
+      margin-bottom: 0;
+    }
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    background-color: #fff;
+    z-index: -1;
+    @media (max-width: $lg) {
+      display: none;
+    }
+  }
+
+  &__tt {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 20px;
+    padding-bottom: 1px;
+    .tt-site_h3, h3 {
+      letter-spacing: 1.2px;
+      @media (max-width: $lg) {
+        letter-spacing: 0.96px;
+        font-size: 48px;
+        line-height: 1;
+      }
+      @media (max-width: $sm) {
+        letter-spacing: 0.72px;
+        font-size: 36px;
+      }
+    }
+    &:before {
+      content: "";
+      left: -10px;
+      right: -10px;
+      bottom: 0;
+      height: 1px;
+      background-color: #fff;
+      position: absolute;
+      @media (max-width: $lg) {
+        left: 0;
+        right: 0;
+      }
+    }
+  }
+
+  &__txt {
+    @media (max-width: $lg) {
+      font-size: 22px;
+      line-height: 28px;
+    }
+    @media (max-width: $sm) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+}
+
+.section-my-map {
+  overflow: visible;
+}
+
+.info-local__cap {
+  background-color: #a5b6b5;
+}
+
+.grid-local {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  @media (max-width: $lg) {
+    grid-template-columns: 1fr;
+  }
+  &__map {
+    .main-map-wrapp {
+      height: 100vh;
+      position: sticky;
+      top: 0;
+      @media (max-width: $lg) {
+        height: 400px;
+      }
+      .main-map {
+        height: 100%;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  &__info {
+    text-align: left;
+  }
+}
+
+.info-local {
+  &__cap {
+    padding-bottom: 50px;
+    padding-top: 32px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  &__inner {
+    padding: 0 20px 32px;
+  }
+  &__tt {
+    padding-bottom: 1px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #000;
+    .tt-site_h3, h3 {
+      letter-spacing: 1.2px;
+    }
+  }
+  &__body {
+    &-item {
+      border-bottom: 1px solid #000;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      .point-local {
+        cursor: pointer;
+      }
+    }
+  }
+  &__img {
+    margin-bottom: 20px;
+  }
+}
+
+.point-local {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 10px;
+  margin-bottom: 15px;
+  &__value {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
+  &__name {
+    color: $cl-dark2;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    @media (max-width: $lg) {
+      font-size: 22px;
+    }
+  }
+}
+
+.info-local__txt >*+* {
+  margin-top: 20px;
+}
+
+@media (max-width: $lg) {
+  .info-local__txt {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .info-local__txt.txt-md {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: $md) {
+  .info-local__txt.txt-md {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .info-local__txt {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.gm-style-cc {
+  display: none;
+}
+
+.info-local__filter {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  grid-gap: 15px;
+  background-color: #fff;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #000;
+  padding: 25px 0 15px;
+  @media (max-width: $md) {
+    padding: 30px 0 20px;
+    .point-local__value {
+      width: 20px;
+      height: 20px;
+    }
+    .point-local__name {
+      font-size: 10px;
+      line-height: 20px;
+    }
+    .point-local {
+      grid-column-gap: 5px;
+    }
+  }
+}
+
+.info-local__filter {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+// counter
+.info-local__body {
+  counter-reset: point-local-value;
+  &-item {
+    counter-increment: point-local-value;
+    .point-local__value {
+      &:before {
+        content: counter(point-local-value);
+      }
+    }
+  }
+}
+
+.grid-local__map {
+  @media (max-width: $lg) {
+    position: sticky;
+    top: 0;
+    bottom: 42px;
+    z-index: 11;
+    height: 30vh;
+    .main-map-wrapp {
+      height: 100%;
+    }
+  }
+}
+@media (max-width: $lg) {
+  .info-local__filter {
+    top: 30vh;
+    padding: 10px 0 1px;
+    .point-local {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+
+/* ----- END Covent all style --------------- */
+/*-------------------------------------*/
+/*-------------------------------------*/

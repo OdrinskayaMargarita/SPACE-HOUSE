@@ -1,0 +1,74 @@
+<div class="loader">
+  <div class="loader__logo">
+    {% include "svg/_logo--loader.svg.twig" %}
+  </div>
+</div>
+
+<script>
+  console.log('loader init');
+  var loader = document.querySelector('.loader');
+
+  if (loader) {
+    window.addEventListener('load', ()=>{
+      setTimeout(function(){
+        loader.classList.add('loader--h');
+      }, 10);
+      setTimeout(function(){
+        loader.remove();
+        document.body.style.overflow = 'visible';
+      }, 1100);
+    });
+  }
+</script>
+
+<style>
+body {
+  overflow: hidden;
+}
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 3;
+  opacity: 1;
+  transition: opacity 1s;
+}
+.loader--h {
+  opacity: 0;
+}
+.loader__logo svg {
+  width: 30vw;
+  height: auto;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 0 #fff);
+  }
+
+  70% {
+    transform: scale(1.03);
+    filter: drop-shadow(0 0 2px #d6bdb6);
+  }
+
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 0px #fff);
+  }
+}
+</style>
+
+<noscript>
+  <style>
+    body {
+      overflow: auto;
+    }
+  </style>
+</noscript>

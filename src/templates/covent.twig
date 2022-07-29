@@ -1,0 +1,32 @@
+---
+title: Pages - Space House
+description: Space House description
+pageName: coventPage
+className: header-light
+<!-- hiddenOff: wrapper_scroll-sticky -->
+---
+
+{% extends 'layouts/_page-default.twig' %}
+{% block content %}
+
+
+
+<div id="fullpage">
+  <div class="section section-dark" data-anchor="header">
+
+    {% include "blocks/_header.twig" %}
+    {% include "blocks/_header-menu.twig" %}
+
+    {% include "pages/covent/_covent-banner.twig" %}
+
+  </div>
+
+  {% include "pages/covent/_fix-map.twig" %}
+
+  <div class="section fp-auto-height scroll-auto" data-anchor="footer">
+    {% include 'blocks/_footer.twig' %}
+  </div>
+
+</div>
+
+{% endblock %}

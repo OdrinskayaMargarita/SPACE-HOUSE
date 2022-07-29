@@ -1,0 +1,24 @@
+---
+title: Pages - Space House
+description: Space House description
+pageName: innerPage
+className: header-light
+---
+
+{% extends 'layouts/_page-default.twig' %}
+{% block content %}
+
+  <div class="bl-coming-soon">
+    {% include "blocks/_header.twig" %}
+    <div class="my-bg">
+      <img src="img/bg16.jpg" alt="image">
+    </div>
+    <div class="container">
+      <div class="bl-coming-soon__inner">
+        <div class="tt-site tt-site_h2">UNDER <br> CONSTRUCTION</div>
+        <p class="txt-md">Site Coming Soon</p>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

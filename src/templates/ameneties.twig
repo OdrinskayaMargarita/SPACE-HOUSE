@@ -1,0 +1,40 @@
+---
+title: Pages - Space House
+description: Space House description
+pageName: designPage
+<!-- hiddenOff: wrapper_scroll-sticky -->
+className: header-light
+---
+
+{% extends 'layouts/_page-default.twig' %}
+{% block content %}
+
+
+<div id="fullpage">
+  <!-- new -->
+  {% include "pages/newpage/_preview-center2.twig" %}
+  <!-- new -->
+  {% include "pages/newpage/_txt-bl.twig" %}
+  <!-- new add class people-grid_reverse and dataatr -->
+  {% include "pages/newpage/_cont1.twig" %}
+  <!-- old -->
+  {% include "pages/newpage/_preview-alone.twig" %}
+  <!-- old -->
+  {% include "pages/newpage/_cont2-line.twig" %}
+  <!-- old -->
+  {% include "pages/newpage/_preview-alone.twig" %}
+  <!-- old -->
+  {% include "pages/newpage/_preview-circles.twig" %}
+  <!-- old -->
+  {% include "pages/newpage/_preview-alone.twig" %}
+  <!-- old -->
+  {% include "pages/newpage/_cont2-line.twig" %}
+
+  <!-- old -->
+  <div class="section fp-auto-height scroll-auto" data-anchor="footer">
+    {% include 'blocks/_footer.twig' %}
+  </div>
+
+</div>
+
+{% endblock %}

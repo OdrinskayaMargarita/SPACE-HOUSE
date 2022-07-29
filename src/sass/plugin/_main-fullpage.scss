@@ -1,0 +1,107 @@
+/* Style for our header texts
+* --------------------------------------- */
+
+/* Centered texts in each section
+* --------------------------------------- */
+.section{
+  text-align:center;
+  overflow: hidden;
+}
+
+#myVideo{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-color: black; /* in case the video doesn't fit the whole page*/
+  // background-image: /* our video */;
+  background-position: center center;
+  background-size: contain;
+  object-fit: cover; /*cover video background */
+}
+
+.my-bg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-color: #fff; /* in case the video doesn't fit the whole page*/
+  // background-image: /* our video */;
+  background-position: center center;
+  background-size: contain;
+  object-fit: cover; /*cover video background */
+  img, video, picture, iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+
+/* Layer with position absolute in order to have it over the video
+* --------------------------------------- */
+#section0 .layer{
+  position: absolute;
+  z-index: 4;
+  width: 100%;
+  left: 0;
+  top: 43%;
+
+  /*
+  * Preventing flicker on some browsers
+  * See http://stackoverflow.com/a/36671466/1081396  or issue #183
+  */
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+/*solves problem with overflowing video in Mac with Chrome */
+#section0{
+  overflow: hidden;
+}
+
+/* Bottom menu
+* --------------------------------------- */
+#infoMenu li a {
+  color: #fff;
+}
+
+/* Hiding video controls
+* See: https://css-tricks.com/custom-controls-in-html5-video-full-screen/
+* --------------------------------------- */
+video::-webkit-media-controls {
+  display:none !important;
+}
+
+.grad-1{
+  background: -webkit-gradient(linear, top left, bottom left, from(#4bbfc3), to(#7baabe));
+  background: -webkit-linear-gradient(#4BBFC3, #7BAABE);
+  background: linear-gradient(#4BBFC3,#7BAABE);
+}
+.grad-3{
+  background: -webkit-gradient(linear, top left, bottom left, from(#969ac6), to(#636F8F));
+  background: -webkit-linear-gradient(#969AC6, #636F8F);
+  background: linear-gradient(#969AC6,#636F8F);
+}
+.grad-2{
+  background: -webkit-gradient(linear, top left, bottom left, from(#7baabe), to(#969ac6));
+  background: -webkit-linear-gradient(#7BAABE, #969AC6);
+  background: linear-gradient(#7BAABE,#969AC6);
+}
+// .section-over {
+//   overflow: auto;
+//   display: block;
+//   .fp-tableCell {
+//     overflow: auto;
+//     display: block;
+//   }
+// }

@@ -1,0 +1,233 @@
+[
+  {
+    "centerCoord": [
+      {
+        "placeLat": 51.51480761845815,
+        "placeLng": -0.11953542657620855,
+        "img": "img/marker-map-office2.svg",
+        "zoomMapDefault": 15
+      }
+    ]
+  },
+  {
+    "afoot": [
+      {
+        "circlePlaceLat": 51.51480761845815,
+        "circlePlaceLng": -0.11953542657620855,
+        "radius": 300,
+        "img": "img/map-marker-afoot.svg",
+        "iconPlaceLat": 51.51480761845815,
+        "iconPlaceLng": -0.11453542657620855,
+        "name": "5 MINS",
+        "positionNameX": 50,
+        "positionNameY": 20
+      },
+      {
+        "circlePlaceLat": 51.51480761845815,
+        "circlePlaceLng": -0.11953542657620855,
+        "radius": 600,
+        "img": "img/map-marker-afoot.svg",
+        "iconPlaceLat": 51.51480761845815,
+        "iconPlaceLng": -0.12753542657620855,
+        "name": "10 MINS",
+        "positionNameX": 55,
+        "positionNameY": 20
+      },
+      {
+        "circlePlaceLat": 51.51480761845815,
+        "circlePlaceLng": -0.11953542657620855,
+        "radius": 900,
+        "img": "img/map-marker-afoot.svg",
+        "iconPlaceLat": 51.51480761845815,
+        "iconPlaceLng": -0.10553542657620855,
+        "name": "15 MINS",
+        "positionNameX": 55,
+        "positionNameY": 20
+      }
+    ]
+  },
+  {
+    "auto": [
+      {
+        "img": "img/map-marker-auto.svg",
+        "iconPlaceLat": 51.512097941890865,
+        "iconPlaceLng": -0.12288376025654572,
+        "name": "COVENT GARDEN",
+        "positionNameX": 120,
+        "positionNameY": 23
+      },
+      {
+        "img": "img/map-marker-auto.svg",
+        "iconPlaceLat": 51.517492706570536,
+        "iconPlaceLng": -0.11992260161564328,
+        "name": "HOLBORN",
+        "positionNameX": 90,
+        "positionNameY": 23
+      },
+      {
+        "img": "img/map-marker-auto.svg",
+        "iconPlaceLat": 51.51824044531045,
+        "iconPlaceLng": -0.11148973715773977,
+        "name": "CHANCERY LANE",
+        "positionNameX": 115,
+        "positionNameY": 23
+      },
+      {
+        "img": "img/map-marker-auto.svg",
+        "iconPlaceLat": 51.51101624142436,
+        "iconPlaceLng": -0.11427923430666459,
+        "name": "TEMPLE",
+        "positionNameX": 85,
+        "positionNameY": 23
+      },
+      {
+        "img": "img/map-marker-auto.svg",
+        "iconPlaceLat": 51.5085188841043,
+        "iconPlaceLng": -0.1258020034033295,
+        "name": "CHARING CROSS",
+        "positionNameX": 115,
+        "positionNameY": 23
+      },
+      {
+        "img": "img/map-marker-auto.svg",
+        "iconPlaceLat": 51.51145693726948,
+        "iconPlaceLng": -0.12814088947435112,
+        "name": "LEICESTER SQUARE",
+        "positionNameX": -80,
+        "positionNameY": 23
+      },
+      {
+        "img": "img/map-marker-auto.svg",
+        "iconPlaceLat": 51.5163310166273,
+        "iconPlaceLng": -0.13007207980822214,
+        "name": "TOTTENHAM COURT ROAD",
+        "positionNameX": -110,
+        "positionNameY": 20
+      }
+    ]
+  },
+  {
+    "railway": [
+      {
+        "img": "img/map-marker-railway.svg",
+        "iconPlaceLat": 51.5318578245751,
+        "iconPlaceLng": -0.12281938701188216,
+        "name": "KINGS CROSS",
+        "time": "12 MINS",
+        "imgInnerClass": "close"
+      },
+      {
+        "img": "img/map-marker-railway.svg",
+        "imgInner": "img/map-marker-railway1.svg",
+        "iconPlaceLat": 51.51873448011682,
+        "iconPlaceLng": -0.08174940243017713,
+        "name": "LIVERPOOL STREET",
+        "time": "18 MINS",
+        "imgInnerClass": "open"
+      },
+      {
+        "img": "img/map-marker-railway.svg",
+        "iconPlaceLat": 51.51157712624398,
+        "iconPlaceLng": -0.07767244483573202,
+        "name": "FENCHUCH  STREET",
+        "time": "20 MINS",
+        "imgInnerClass": "close"
+      },
+      {
+        "img": "img/map-marker-railway.svg",
+        "iconPlaceLat": 51.504124805323386,
+        "iconPlaceLng": -0.08338018551464846,
+        "name": "LONDON BRIDGE",
+        "time": "21 MINS",
+        "imgInnerClass": "close"
+      },
+      {
+        "img": "img/map-marker-railway.svg",
+        "iconPlaceLat": 51.50423165723095,
+        "iconPlaceLng": -0.10934396853623166,
+        "name": "WATERLOO",
+        "time": "17 MINS",
+        "imgInnerClass": "close"
+      },
+      {
+        "img": "img/map-marker-railway.svg",
+        "iconPlaceLat": 51.495094912865824,
+        "iconPlaceLng": -0.1458220109929968,
+        "name": "VICTORIA",
+        "time": "17 MINS",
+        "imgInnerClass": "close"
+      },
+      {
+        "img": "img/map-marker-railway.svg",
+        "imgInner": "img/map-marker-railway2.svg",
+        "iconPlaceLat": 51.51683842487772,
+        "iconPlaceLng": -0.1764206518482972,
+        "name": "PADDINGTON",
+        "time": "23 MINS",
+        "imgInnerClass": "open"
+      },
+      {
+        "img": "img/map-marker-railway.svg",
+        "iconPlaceLat": 51.52255305605033,
+        "iconPlaceLng": -0.16311689525913506,
+        "name": "EUSTON",
+        "time": "14 MINS",
+        "imgInnerClass": "close"
+      },
+      {
+        "img": "img/map-marker-railway.svg",
+        "imgInner": "img/map-marker-railway3.svg",
+        "iconPlaceLat": 51.52859371757487,
+        "iconPlaceLng": -0.13329644081688438,
+        "name": "ST PANCRAS",
+        "time": "13 MINS",
+        "imgInnerClass": "open"
+      }
+    ]
+  },
+  {
+    "aerodrome": [
+      {
+        "img": "img/map-marker-aero.svg",
+        "imgArrow": "img/arrow-top-map.svg",
+        "iconPlaceLat": 51.53518781025013,
+        "iconPlaceLng": -0.10089535530997039,
+        "name": "LONDON LUTON",
+        "time": "1HR 4 MINS"
+      },
+      {
+        "img": "img/map-marker-aero.svg",
+        "imgArrow": "img/arrow-top-right-map.svg",
+        "iconPlaceLat": 51.52963495363408,
+        "iconPlaceLng": -0.0718845833747608,
+        "name": "LONDON STANSTEAD",
+        "time": "1HR 3 MINS",
+        "imgInnerClass": "open"
+      },
+      {
+        "img": "img/map-marker-aero.svg",
+        "imgArrow": "img/arrow-right-map.svg",
+        "iconPlaceLat": 51.51254499231045,
+        "iconPlaceLng": -0.06244320789288789,
+        "name": "LONDON CITY AIRPORT",
+        "time": "45 MINS"
+      },
+      {
+        "img": "img/map-marker-aero.svg",
+        "imgArrow": "img/arrow-bottom-map.svg",
+        "iconPlaceLat": 51.487432483300225,
+        "iconPlaceLng": -0.13986248684424593,
+        "name": "LONDON GATWICK",
+        "time": "41 MINS"
+      },
+      {
+        "img": "img/map-marker-aero.svg",
+        "imgArrow": "img/arrow-left-map.svg",
+        "iconPlaceLat": 51.504959267494,
+        "iconPlaceLng": -0.1918758826807459,
+        "name": "HEATHROW",
+        "time": "1 HR 5 MINS"
+      }
+    ]
+  }
+]

@@ -1,0 +1,8 @@
+html, body {
+  font: normal normal 22px/26px $font-1;
+
+  @media (max-width: $md) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

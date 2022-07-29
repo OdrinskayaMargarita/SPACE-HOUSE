@@ -1,0 +1,137 @@
+---
+title: Pages - Space House
+description: Space House description
+pageName: homePage
+<!-- hiddenOff: wrapper_scroll-sticky -->
+className: header-light
+---
+
+{% extends 'layouts/_page-default.twig' %}
+{% block content %}
+
+
+<div class="main-scrollbar">
+  <div class="main-scrollbar-inner" style="height: 400vh">
+    <div id="fp-nav" class="fp-right main-scrollbar-style">
+      <ul>
+        <li class="fp-nav-slide2"><a href="#" class="active"><span class="fp-sr-only"></span></a></li>
+        <li class="fp-nav-slide3"><a href="#"><span class="fp-sr-only"></span></a></li>
+        <li class="fp-nav-slide4"><a href="#"><span class="fp-sr-only"></span></a></li>
+        <li class="fp-nav-slide5"><a href="#"><span class="fp-sr-only"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div id="fullpage">
+  <div class="header-main">
+    {% include "blocks/_header.twig" %}
+    {% include "blocks/_header-menu.twig" %}
+  </div>
+  <div class="home-hero section section-dark section-banner" data-anchor="header" style="height: 100vh;">
+
+    {% include "blocks/_loader.twig" %}
+    {# {% include "blocks/_header.twig" %} #}
+
+    <div class="home-hero__frames">
+      {% for i in range(1, 143) %}
+        {% if i == 1 %}
+          <div class="home-hero__frame home-hero__frame--visible"></div>
+          <img src="img/frames/frame-{{i}}.jpg" alt="" class="home-hero__frame home-hero__frame--visible">
+        {% else %}
+          <img src="img/frames/frame-{{i}}.jpg" alt="" class="home-hero__frame">
+        {% endif %}
+
+      {% endfor %}
+
+    </div>
+
+    <div class="home-hero__text section__inner txt-left">
+      <div class="container">
+        <div class="section-banner__tt">An enduring icon of brutalist architecture, space house has always drawn those
+          who see the world differently.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="home-slider">
+    <div class="home-slider__wrapper">
+      <div class="home-slider__slide section section-anim section-dark" data-anchor="slide1">
+          <video class="my-bg" loop muted autoplay playsinline data-autoplay>
+            <source src="https://res.cloudinary.com/dlz80e3v7/video/upload/v1582903321/flowers_kgvvqw.mp4" type="video/mp4">
+            <source src="https://res.cloudinary.com/dlz80e3v7/video/upload/v1582903318/flowers_ofohyg.webm" type="video/webm">
+          </video>
+          <div class="section__inner section__inner_st txt-left">
+            <div class="container container_max">
+              <div class="tt-anim tt-site tt-site_h2 mb--3 mb--2-tb" data-swiper-parallax-x="100">SPACE TO <br> COLLABORATE</div>
+              <div class="txt-anim max-width-txt txt-md mb--3 mb--4-tb" data-swiper-parallax-x="100" data-swiper-parallax-duration="1700">
+                <p>Redesigned to bring people together, spark conversation and ignite ideas, Space House nurtures a
+                  thriving
+                  community at its heart.</p>
+              </div>
+              <a href="#" class="btn-anim btn btn_border btn_light btn_mob-style btn_min-width" data-swiper-parallax-x="100" data-swiper-parallax-duration="1900">VIEW</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="home-slider__slide section section-anim section-dark" data-anchor="slide2">
+          <div class="my-bg">
+            <img src="img/bg3.jpg" alt="image" data-swiper-parallax-y="50%">
+          </div>
+          <div class="section__inner section__inner_st txt-left">
+            <div class="container container_max">
+              <div class="tt-anim tt-site tt-site_h2 mb--3 mb--2-tb" data-swiper-parallax-x="100">SPACE TO <br> BREATHE</div>
+              <div class="txt-anim max-width-txt txt-md mb--3 mb--4-tb" data-swiper-parallax-x="100" data-swiper-parallax-duration="1700">
+                <p>Refurbished to meet the standards of today, Space House supports your physical and mental wellbeing, as
+                  well as the planet and environment.</p>
+              </div>
+              <a href="#" class="btn-anim btn btn_border btn_light btn_mob-style btn_min-width" data-swiper-parallax-x="100" data-swiper-parallax-duration="1900">VIEW</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="home-slider__slide section section-anim section-dark" data-anchor="slide3">
+          <div class="my-bg">
+            <img src="img/bg5.jpg" alt="image" data-swiper-parallax-y="50%">
+          </div>
+          <div class="section__inner section__inner_st txt-left">
+            <div class="container container_max">
+              <div class="tt-anim tt-site tt-site_h2 mb--3 mb--2-tb" data-swiper-parallax-x="100">SPACE TO <br> CREATE</div>
+              <div class="txt-anim max-width-txt txt-md mb--3 mb--4-tb" data-swiper-parallax-x="100" data-swiper-parallax-duration="1700">
+                <p>As striking today as it was upon its completion in 1968, Space House conjures a vision of the future
+                  now
+                  as then – and with it the feeling of endless possibility.</p>
+              </div>
+              <a href="#" class="btn-anim btn btn_border btn_light btn_mob-style btn_min-width" data-swiper-parallax-x="100" data-swiper-parallax-duration="1900">VIEW</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="home-slider__slide section section-anim section-dark" data-anchor="slide4">
+          <div class="my-bg">
+            <img src="img/bg6.jpg" alt="image" data-swiper-parallax-y="50%">
+          </div>
+          <div class="section__inner section__inner_st txt-left">
+            <div class="container container_max">
+              <div class="tt-anim tt-site tt-site_h2 mb--3 mb--2-tb" data-swiper-parallax-x="100">SPACE TO <br> EVOLVE</div>
+              <div class="txt-anim max-width-txt txt-md mb--3 mb--4-tb" data-swiper-parallax-x="100" data-swiper-parallax-duration="1700">
+                <p>Built to evolve alongside you, Space House gives you the physical and mental space to roam.</p>
+              </div>
+              <a href="#" class="btn-anim btn btn_border btn_light btn_mob-style btn_min-width" data-swiper-parallax-x="100" data-swiper-parallax-duration="1900">VIEW</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="home-slider__slide home-slider__slide--footer">
+          {% include 'blocks/_footer.twig' %}
+        </div>
+    </div>
+
+  </div>
+  {# <div class="section section-footer fp-auto-height" data-anchor="footer">
+    {% include 'blocks/_footer.twig' %}
+  </div> #}
+
+</div>
+
+{% endblock %}

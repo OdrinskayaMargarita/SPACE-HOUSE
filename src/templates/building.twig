@@ -1,0 +1,69 @@
+---
+title: Pages - Space House
+description: Space House description
+pageName: spacePage
+<!-- hiddenOff: wrapper_scroll-sticky -->
+className: header-light
+---
+
+{% extends 'layouts/_page-default.twig' %}
+{% block content %}
+
+
+<div id="fullpage" class="grid-page grid-page_anim grid-page_second">
+  <!-- new -->
+  {% include "pages/newpage/_preview-center.twig" %}
+  <!-- new -->
+  {% include "pages/newpage/_txt-bl.twig" %}
+  <!-- old -->
+  {% include "pages/newpage/_preview-alone.twig" %}
+  <!-- new add class people-grid_reverse and dataatr -->
+  {% include "pages/newpage/_cont1.twig" %}
+  <!-- old -->
+  {% include "pages/newpage/_slider-range.twig" %}
+  <!-- old -->
+  {% include "pages/newpage/_cont2-line.twig" %}
+  <!-- old -->
+  {% include "pages/newpage/_slider-range.twig" %}
+  <!-- new -->
+  {% include "pages/newpage/_preview-center2-anim.twig" %}
+  <!-- new -->
+  {% include "pages/newpage/_txt-bl.twig" %}
+  <!-- old -->
+  {% include "pages/newpage/_space1.twig" %}
+  <!-- old -->
+  {% include "pages/newpage/_preview-alone.twig" %}
+  <!-- old -->
+  {% include "pages/newpage/_built4.twig" %}
+  <!-- old -->
+  {% include "pages/newpage/_preview-alone.twig" %}
+  <!-- old -->
+  {% include "pages/newpage/_space2.twig" %}
+  <!-- old -->
+  {% include "pages/newpage/_preview4.twig" %}
+  <!-- old -->
+  {% include "pages/newpage/_preview-square.twig" %}
+  <!-- old -->
+  {% include "pages/newpage/_preview5.twig" %}
+  <!-- new add title 3 -->
+  {% include "pages/newpage/_cont2-line-tt-sm.twig" %}
+  <!-- old -->
+  {% include "pages/newpage/_space3.twig" %}
+
+
+  <!-- old -->
+  {% include "pages/space/_preview8.twig" %}
+  {% include "pages/space/_preview-square2.twig" %}
+  {% include "pages/space/_slider-range.twig" %}
+  {% include "pages/space/_built6.twig" %}
+  {% include "pages/space/_preview9.twig" %}
+  <!-- TODO: FS remove class section-grad-inner3 -->
+  {% include "pages/space/_built7.twig" %}
+  <!-- old -->
+  <div class="section fp-auto-height scroll-auto" data-anchor="footer">
+    {% include 'blocks/_footer.twig' %}
+  </div>
+
+</div>
+
+{% endblock %}

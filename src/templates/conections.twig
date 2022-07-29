@@ -1,0 +1,34 @@
+---
+title: Pages - Space House
+description: Space House description
+pageName: connectionPage
+<!-- hiddenOff: wrapper_scroll-sticky -->
+<!-- className: header-light -->
+---
+
+{% extends 'layouts/_page-default.twig' %}
+{% block content %}
+
+
+<div id="fullpage" class="grid-page grid-page--white">
+  <div class="section section-design-banner fp-auto-height scroll-auto" data-anchor="header" style="height: 100vh;">
+    <div class="header-design">
+      {% include "blocks/_header.twig" %}
+    </div>
+
+    {% include "blocks/_header-menu.twig" %}
+
+    {% include "pages/conections/_design-banner.twig" %}
+
+  </div>
+
+  {% include "pages/conections/_map.twig" %}
+  {% include "pages/conections/_section2.twig" %}
+
+  <div class="section fp-auto-height scroll-auto" data-anchor="footer">
+    {% include 'blocks/_footer.twig' %}
+  </div>
+
+</div>
+
+{% endblock %}

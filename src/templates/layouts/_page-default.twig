@@ -1,0 +1,19 @@
+{% import "mixins/_buttons.twig" as button %}
+
+<!doctype html>
+<html lang="en">
+
+{% include "./_head.twig" %}
+
+<body class="{{ className }}" data-page-name="{{ pageName }}" id="body">
+
+<main class="wrapper {{ hiddenOff }}">
+    {% block content %}{% endblock %}
+</main>
+
+{#{% include "blocks/_svg-defs.twig" %}#}
+
+<script src="/js/app.js"></script>
+
+</body>
+</html>

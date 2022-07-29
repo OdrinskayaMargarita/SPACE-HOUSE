@@ -1,0 +1,330 @@
+/* ----- Home page ------------------- */
+.section-banner__tt {
+  font-size: 48px;
+  letter-spacing: -0.96px;
+  line-height: 60px;
+  @media (max-width: $lg) {
+    font-size: 38px;
+    letter-spacing: -0.76px;
+    line-height: 48px;
+  }
+  @media (max-width: $md) {
+    font-size: 24px;
+    letter-spacing: -0.48px;
+    line-height: 28px;
+  }
+}
+
+.section-dark {
+  color: #fff;
+}
+
+.section__inner {
+  position: relative;
+  z-index: 1;
+}
+
+.txt-left {
+  text-align: left;
+}
+
+.section__inner_st {
+  height: 100%;
+  padding: 150px 0 72px;
+  @media (max-width: $md) {
+    padding: 100px 0 26px;
+  }
+  .container {
+    flex-grow: 1;
+  }
+}
+
+.max-width-txt {
+  max-width: 650px;
+}
+
+.fp-viewing-footer, .fp-viewing-header {
+  .main-scrollbar {
+    display: none;
+  }
+}
+
+.main-scrollbar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  @media (max-width: 1440px) {
+    right: 0;
+  }
+  // right: calc((100vw - 1440px) / 2);
+  right: 0;
+  #fp-nav {
+    position: fixed;
+    top: 0;
+    transform: none !important;
+    height: 100vh;
+    height: var(--app-height);
+
+    padding: 40px 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transition: opacity .5s;
+    pointer-events: none;
+
+    @media(max-width: $lg){
+      padding-bottom: 20px;
+    }
+    @media (max-width: $md) {
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+
+    &.visible {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+}
+
+.main-scrollbar-style#fp-nav {
+  ul li {
+    width: 39px !important;
+    height: 13px !important;
+    margin: 3px 40px;
+    @media (max-width: $md) {
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+    span {
+      display: none;
+    }
+  }
+  .hidden {
+    display: none;
+  }
+  li a {
+    border: 1px solid $cl-light2;
+    border-radius: 50%;
+    display: block;
+    transition: background-color 1.5s;
+
+    &.active {
+      background-color: #fff;
+    }
+  }
+}
+
+@media (max-width: $lg) {
+  .main-scrollbar-inner {
+    height: 9999px !important;
+    .main-scrollbar-style {
+      display: flex !important;
+    }
+  }
+  .main-scrollbar-style#fp-nav ul li {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+.fp-viewing-slide1 {
+  .fp-nav-slide2 {
+    a {
+      background-color: #fff;
+    }
+  }
+}
+
+.fp-viewing-slide2 {
+  .fp-nav-slide3 {
+    a {
+      background-color: #fff;
+    }
+  }
+}
+
+.fp-viewing-slide3 {
+  .fp-nav-slide4 {
+    a {
+      background-color: #fff;
+    }
+  }
+}
+
+.fp-viewing-slide4 {
+  .fp-nav-slide5 {
+    a {
+      background-color: #fff;
+    }
+  }
+}
+
+.fp-viewing-slide5 {
+  .fp-nav-slide6 {
+    a {
+      background-color: #fff;
+    }
+  }
+}
+
+.fp-viewing-slide6 {
+  .fp-nav-slide7 {
+    a {
+      background-color: #fff;
+    }
+  }
+}
+
+.fp-viewing-slide7 {
+  .fp-nav-slide8 {
+    a {
+      background-color: #fff;
+    }
+  }
+}
+
+.fp-viewing-slide9 {
+  .fp-nav-slide10 {
+    a {
+      background-color: #fff;
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  .section-anim {
+    &.active {
+      #myVideo {
+        animation: {
+          name: animateImg;
+          duration: 1.4s;
+          timing-function: ease-in-out; // ease | ease-in-out
+          delay: 0s; //задержка
+          iteration-count: 1; // infinite | <number>
+          direction: normal; // reverse; alternate; alternate-reverse;
+          fill-mode: forwards; // none | forwards | backwards | both
+          play-state: running; // running | paused
+        }
+      }
+      .section__inner {
+        .tt-anim {
+          animation: {
+            name: animateTxt;
+            duration: 1.4s;
+            timing-function: ease-in-out; // ease | ease-in-out
+            delay: 0s; //задержка
+            iteration-count: 1; // infinite | <number>
+            direction: normal; // reverse; alternate; alternate-reverse;
+            fill-mode: forwards; // none | forwards | backwards | both
+            play-state: running; // running | paused
+          }
+        }
+        .txt-anim {
+          animation: {
+            name: animateTxt;
+            duration: 1.6s;
+            timing-function: ease-in-out; // ease | ease-in-out
+            delay: 0s; //задержка
+            iteration-count: 1; // infinite | <number>
+            direction: normal; // reverse; alternate; alternate-reverse;
+            fill-mode: forwards; // none | forwards | backwards | both
+            play-state: running; // running | paused
+          }
+        }
+        .btn-anim {
+          animation: {
+            name: animateTxt;
+            duration: 1.9s;
+            timing-function: ease-in-out; // ease | ease-in-out
+            delay: 0s; //задержка
+            iteration-count: 1; // infinite | <number>
+            direction: normal; // reverse; alternate; alternate-reverse;
+            fill-mode: forwards; // none | forwards | backwards | both
+            play-state: running; // running | paused
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes animateImg {
+  from {
+    transform: scale(1.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes animateTxt {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+.home-hero {
+  &__frames {
+    width: 100%;
+    height: 100%;
+  }
+  &__frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+
+    &--visible {
+      // display: block;
+      visibility: visible;
+    }
+  }
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+}
+
+.home-slider {
+  height: 100vh;
+  overflow: hidden;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__slide {
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    flex-shrink: 0;
+
+    .btn {
+      transition: background-color .3s, color .3s, transform 0s;
+    }
+
+    &--footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+[data-page-name="homePage"] {
+  @include scrollbars(0px, #fff, #fff);
+}
+
+/* ----- END Home page --------------- */
+/*-------------------------------------*/
+/*-------------------------------------*/
